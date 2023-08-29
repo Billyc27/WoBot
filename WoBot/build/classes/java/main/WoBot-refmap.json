@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "WoBot/mixins/ClientConnectionAccessor": {
+      "channel": "field_11651:Lio/netty/channel/Channel;",
+      "sendImmediately": "method_10764(Lnet/minecraft/class_2596;Lnet/minecraft/class_7648;)V"
+    },
+    "WoBot/mixins/WindowTitleMixin": {
+      "getWindowTitle": "Lnet/minecraft/class_310;method_24287()Ljava/lang/String;"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "WoBot/mixins/ClientConnectionAccessor": {
+        "channel": "field_11651:Lio/netty/channel/Channel;",
+        "sendImmediately": "method_10764(Lnet/minecraft/class_2596;Lnet/minecraft/class_7648;)V"
+      },
+      "WoBot/mixins/WindowTitleMixin": {
+        "getWindowTitle": "Lnet/minecraft/class_310;method_24287()Ljava/lang/String;"
+      }
+    }
+  }
+}
