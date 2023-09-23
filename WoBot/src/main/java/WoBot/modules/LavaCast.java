@@ -56,7 +56,7 @@ public class LavaCast extends Module {
     );
     private final Setting<Integer> lavaDownMult = sgShape.add(new IntSetting.Builder()
         .name("lava-down-mulipiler")
-        .description("Controlls the shape of the cast")
+        .description("Controls the shape of the cast")
         .defaultValue(40)
         .min(1)
         .sliderMax(100)
@@ -64,7 +64,7 @@ public class LavaCast extends Module {
     );
     private final Setting<Integer> lavaUpMult = sgShape.add(new IntSetting.Builder()
         .name("lava-up-mulipiler")
-        .description("Controlls the shape of the cast")
+        .description("Controls the shape of the cast")
         .defaultValue(8)
         .min(1)
         .sliderMax(100)
@@ -72,7 +72,7 @@ public class LavaCast extends Module {
     );
     private final Setting<Integer> waterDownMult = sgShape.add(new IntSetting.Builder()
         .name("water-down-mulipiler")
-        .description("Controlls the shape of the cast")
+        .description("Controls the shape of the cast")
         .defaultValue(4)
         .min(1)
         .sliderMax(100)
@@ -80,7 +80,7 @@ public class LavaCast extends Module {
     );
     private final Setting<Integer> waterUpMult = sgShape.add(new IntSetting.Builder()
         .name("water-up-mulipiler")
-        .description("Controlls the shape of the cast")
+        .description("Controls the shape of the cast")
         .defaultValue(1)
         .min(1)
         .sliderMax(100)

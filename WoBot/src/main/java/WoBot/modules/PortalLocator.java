@@ -28,7 +28,7 @@ public class PortalLocator extends Module {
 
     private Set<BlockPos> recordedPortals = new HashSet<>();
 
-    private static final long CHECK_INTERVAL_MS = 1000; // 1 second interval
+    private static final long CHECK_INTERVAL_MS = 250; // 1 second interval
     private ScheduledExecutorService executorService;
 
     public PortalLocator() {
@@ -64,9 +64,10 @@ public class PortalLocator extends Module {
 
     private void savePortalCoordinates() {
         BlockPos playerPos = mc.player.getBlockPos();
-        for (int x = -160; x <= 160; x++) {
-            for (int y = -160; y <= 160; y++) {
-                for (int z = -160; z <= 160; z++) {
+        int playerY = mc.player.getBlockPos().getY() - 3;
+        for (int x = -168; x <= 168; x+= 2 ){
+            for (int y = -playerY; y <= 0; y+= 3 ) {
+                for (int z = -168; z <= 168; z+= 2 ) {
                     BlockPos pos = playerPos.add(x, y, z);
                     if (mc.world.getBlockState(pos).getBlock() == Blocks.NETHER_PORTAL &&
                             recordedPortals.add(pos)) {

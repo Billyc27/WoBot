@@ -7,6 +7,7 @@ import meteordevelopment.meteorclient.addons.MeteorAddon;
 import meteordevelopment.meteorclient.commands.Commands;
 import meteordevelopment.meteorclient.systems.modules.Category;
 import meteordevelopment.meteorclient.systems.modules.Modules;
+import meteordevelopment.meteorclient.systems.modules.player.Reach;
 import org.slf4j.Logger;
 
 public class WOBOT extends MeteorAddon {
@@ -27,6 +28,10 @@ public class WOBOT extends MeteorAddon {
         Modules.get().add(new ChatBot());
         Modules.get().add(new LavaCast());
         Modules.get().add(new AutoWither());
+        Modules.get().add(new BetterSpeed());
+        Modules.get().add(new SpeedBypass());
+        Modules.get().add(new Test());
+        Modules.get().add(new RobotWalk());
         // Commands
         Commands.add(new Gift());
         Commands.add(new Coordinates());

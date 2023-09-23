@@ -75,7 +75,7 @@ public class DiscordRPC extends Module {
     private final Setting<List<String>> line2Strings = sgLine2.add(new StringListSetting.Builder()
         .name("line-2-messages")
         .description("Messages used for the second line.")
-        .defaultValue("{player}", "Is Walking About!", "{server.player_count} players online")
+        .defaultValue("{player}", "{server.player_count} players online","Way oh way oh, way oh way oh", "Walk like an Egyptian!")
         .onChanged(strings -> recompileLine2())
         .build()
     );
