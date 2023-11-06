@@ -1,9 +1,0 @@
-{
-  "required": true,
-  "package": "WoBot.mixins",
-  "compatibilityLevel": "JAVA_17",
-  "client": ["WindowTitleMixin"],
-  "injectors": {
-    "defaultRequire": 1
-  }
-}
